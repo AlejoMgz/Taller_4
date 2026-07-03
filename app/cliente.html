@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de control</title>
+    <link class="shortcut icon" href="assets/img/yo.jpg" type="image/x-icon">
+
+    <meta name="author" content="Alejandro Mesa">
+    <meta name="description" content="Panel de cliente">
+    <meta name="keywords" content="CLIENTE, cliente, Cliente">
+
+    <meta name="theme-color" content="#1328EB">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-dark bg-dark shadow mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="../index.html"><i class="bi bi-arrow-left me-2"></i>Regresar a Inicio</a>
+            <span class="navbar-text text-white-50 d-none d-md-inline">Módulo de Gestión de Clientes Frecuentes</span>
+        </div>
+    </nav>
+
+    <main class="container mb-5">
+        
+        <div class="alert alert-warning alert-dismissible fade show border-0 shadow-sm mb-5" role="alert">
+            <strong><i class="bi bi-exclamation-triangle-fill me-2"></i>Control de Aforo & Documentación:</strong> Se recuerda a todos los usuarios inscritos verificar que su Cédula Digital o documento de identidad coincida exactamente con los datos de su perfil para evitar la cancelación de sus abonos en los FanFests oficiales.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- ================= CLIENTE 1: ALEJANDRO MESA ================= -->
+        <div class="row g-4 mb-5 border-bottom pb-5">
+            <section class="col-12 col-lg-4">
+                <div class="card border-0 shadow-sm text-center p-4 mb-3">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=150" alt="Foto Alejandro" class="rounded-circle img-thumbnail mb-3" style="width: 110px; height: 110px; object-fit: cover;">
+                        <h2 class="h5 fw-bold mb-1">Alejandro Mesa</h2>
+                        <p class="text-muted small mb-3">Hincha Oficial Categoría Oro</p>
+                        <span class="badge bg-warning text-dark fw-semibold px-3 py-2">Medellín, Col</span>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold border-bottom pb-2 mb-3"><i class="bi bi-bar-chart-fill me-2 text-warning"></i>Métricas de Cuenta</h3>
+                        <ul class="list-unstyled small mb-0">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Puntos Acumulados:</span>
+                                <span class="fw-bold text-primary">2,850 pts</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Asistencias FanFest:</span>
+                                <span class="fw-bold">14 Eventos</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Códigos Redimidos:</span>
+                                <span class="fw-bold text-success">8/10</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="text-muted">Estado del Perfil:</span>
+                                <span class="badge bg-success">Verificado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-lg-8">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <div class="card-body">
+                        <ul class="nav nav-pills mb-3" id="pills-tab-1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active fw-bold small" id="pills-activas-1-tab" data-bs-toggle="pill" data-bs-target="#pills-activas-1" type="button" role="tab" aria-selected="true"><i class="bi bi-calendar2-check me-2"></i>Campañas Activas (2026)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold small" id="pills-historial-1-tab" data-bs-toggle="pill" data-bs-target="#pills-historial-1" type="button" role="tab" aria-selected="false"><i class="bi bi-journal-text me-2"></i>Historial de Mundiales</button>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content" id="pills-tabContent-1">
+                            <div class="tab-pane fade show active" id="pills-activas-1" role="tabpanel">
+                                <div class="p-3 bg-light rounded border-start border-4 border-success mb-3 shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Abono Total - Copa Mundial 2026</h4><span class="badge bg-success">Confirmado</span></div>
+                                    <p class="small text-muted mb-2">Asignación de puesto preferencial en zona norte para la transmisión en pantallas gigantes HD de los partidos de fase de grupos.</p>
+                                    <button class="btn btn-sm btn-outline-success fw-bold">Descargar Entrada QR</button>
+                                </div>
+                                <div class="p-3 bg-light rounded border-start border-4 border-warning shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Campaña Coleccionables Digitales</h4><span class="badge bg-warning text-dark">2 Pendientes</span></div>
+                                    <p class="small text-muted mb-0">Te quedan dos códigos por ingresar para completar el álbum virtual conmemorativo de la Tricolor.</p>
+                                </div>
+                            </div>
+                            <!-- Historial -->
+                            <div class="tab-pane fade" id="pills-historial-1" role="tabpanel">
+                                <div class="p-3 bg-light rounded border-start border-4 border-danger mb-3 shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Seguimiento Proceso Qatar 2022</h4><span class="text-muted small">2022</span></div>
+                                    <p class="small text-muted mb-0 text-danger fw-semibold">Campaña Inactiva: La Selección Colombia no logró la clasificación a la cita mundialista.</p>
+                                </div>
+                                <div class="p-3 bg-light rounded border-start border-4 border-secondary shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Acceso FanFest Rusia 2018</h4><span class="text-muted small">2018</span></div>
+                                    <p class="small text-muted mb-0">Inscripción al evento masivo regional. Asistencia verificada a los 4 partidos disputados por el combinado nacional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= CLIENTE 2: MATEO BERMÚDEZ ================= -->
+        <div class="row g-4 mb-5 border-bottom pb-5">
+            <section class="col-12 col-lg-4">
+                <div class="card border-0 shadow-sm text-center p-4 mb-3">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?q=80&w=150" alt="Foto Mateo" class="rounded-circle img-thumbnail mb-3" style="width: 110px; height: 110px; object-fit: cover;">
+                        <h2 class="h5 fw-bold mb-1">Mateo Bermúdez</h2>
+                        <p class="text-muted small mb-3">Hincha Oficial Categoría Plata</p>
+                        <span class="badge bg-secondary fw-semibold px-3 py-2">Bogotá, Col</span>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold border-bottom pb-2 mb-3"><i class="bi bi-bar-chart-fill me-2 text-secondary"></i>Métricas de Cuenta</h3>
+                        <ul class="list-unstyled small mb-0">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Puntos Acumulados:</span>
+                                <span class="fw-bold text-primary">1,920 pts</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Asistencias FanFest:</span>
+                                <span class="fw-bold">9 Eventos</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Códigos Redimidos:</span>
+                                <span class="fw-bold text-success">4/10</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="text-muted">Estado del Perfil:</span>
+                                <span class="badge bg-primary">En Validación</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-lg-8">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <div class="card-body">
+                        <ul class="nav nav-pills mb-3" id="pills-tab-2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active fw-bold small" id="pills-activas-2-tab" data-bs-toggle="pill" data-bs-target="#pills-activas-2" type="button" role="tab" aria-selected="true"><i class="bi bi-calendar2-check me-2"></i>Campañas Activas (2026)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold small" id="pills-historial-2-tab" data-bs-toggle="pill" data-bs-target="#pills-historial-2" type="button" role="tab" aria-selected="false"><i class="bi bi-journal-text me-2"></i>Historial de Mundiales</button>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content" id="pills-tabContent-2">
+                            <div class="tab-pane fade show active" id="pills-activas-2" role="tabpanel">
+                                <div class="p-3 bg-light rounded border-start border-4 border-primary mb-3 shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Paquete Viajero - Sedes Internacionales 2026</h4><span class="badge bg-primary">En Revisión</span></div>
+                                    <p class="small text-muted mb-2">Validación de reserva de boletería grupal y logística de traslados con agencias aliadas en curso.</p>
+                                    <button class="btn btn-sm btn-outline-primary fw-bold">Comprobar Estado de Pago</button>
+                                </div>
+                                <div class="p-3 bg-light rounded border-start border-4 border-secondary shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Suscripción a la Tribuna Digital</h4><span class="badge bg-success">Activa</span></div>
+                                    <p class="small text-muted mb-0">Acceso completo a transmisiones con estadísticas en tiempo real y sorteos exclusivos multiplataforma.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-historial-2" role="tabpanel">
+                                <div class="p-3 bg-light rounded border-start border-4 border-danger mb-3 shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Reserva Cancelada Qatar 2022</h4><span class="text-muted small">2022</span></div>
+                                    <p class="small text-muted mb-0 text-danger fw-semibold">Proceso archivado por eliminación del equipo nacional en las fases clasificatorias sudamericanas.</p>
+                                </div>
+                                <div class="p-3 bg-light rounded border-start border-4 border-secondary shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Suscripción Básica Rusia 2018</h4><span class="text-muted small">2018</span></div>
+                                    <p class="small text-muted mb-0">Usuario registrado con kit de bienvenida básico entregado durante los partidos de octavos de final.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= CLIENTE 3: VALENTINA RESTREPO ================= -->
+        <div class="row g-4">
+            <section class="col-12 col-lg-4">
+                <div class="card border-0 shadow-sm text-center p-4 mb-3">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150" alt="Foto Valentina" class="rounded-circle img-thumbnail mb-3" style="width: 110px; height: 110px; object-fit: cover;">
+                        <h2 class="h5 fw-bold mb-1">Valentina Restrepo</h2>
+                        <p class="text-muted small mb-3">Hincha Preferencial Afiliado</p>
+                        <span class="badge bg-info text-dark fw-semibold px-3 py-2">Cali, Col</span>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <h3 class="h6 fw-bold border-bottom pb-2 mb-3"><i class="bi bi-bar-chart-fill me-2 text-info"></i>Métricas de Cuenta</h3>
+                        <ul class="list-unstyled small mb-0">
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Puntos Acumulados:</span>
+                                <span class="fw-bold text-primary">3,120 pts</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Asistencias FanFest:</span>
+                                <span class="fw-bold">18 Eventos</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Códigos Redimidos:</span>
+                                <span class="fw-bold text-success">10/10</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span class="text-muted">Estado del Perfil:</span>
+                                <span class="badge bg-success">Verificado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 col-lg-8">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <div class="card-body">
+                        <ul class="nav nav-pills mb-3" id="pills-tab-3" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active fw-bold small" id="pills-activas-3-tab" data-bs-toggle="pill" data-bs-target="#pills-activas-3" type="button" role="tab" aria-selected="true"><i class="bi bi-calendar2-check me-2"></i>Campañas Activas (2026)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold small" id="pills-historial-3-tab" data-bs-toggle="pill" data-bs-target="#pills-historial-3" type="button" role="tab" aria-selected="false"><i class="bi bi-journal-text me-2"></i>Historial de Mundiales</button>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content" id="pills-tabContent-3">
+                            <div class="tab-pane fade show active" id="pills-activas-3" role="tabpanel">
+                                <div class="p-3 bg-light rounded border-start border-4 border-warning mb-3 shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Redención de Camiseta Conmemorativa</h4><span class="badge bg-warning text-dark">Pendiente Retiro</span></div>
+                                    <p class="small text-muted mb-2">Alcanzó la meta máxima de puntos. Presentar el código de barras en los puntos físicos autorizados para reclamar la prenda textil oficial.</p>
+                                    <button class="btn btn-sm btn-outline-warning text-dark fw-bold">Generar Cupón Físico</button>
+                                </div>
+                                <div class="p-3 bg-light rounded border-start border-4 border-success shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Pase de Acceso VIP - FanFest Principal</h4><span class="badge bg-success">Habilitado</span></div>
+                                    <p class="small text-muted mb-0">Incluye zona de silletería acolchada con catering y pantallas secundarias interactivas durante todo el fixture del mundial.</p>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="tab-pane fade" id="pills-historial-3" role="tabpanel">
+                                <div class="p-3 bg-light rounded border-start border-4 border-secondary mb-3 shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Registro de Abonados Rusia 2018</h4><span class="text-muted small">2018</span></div>
+                                    <p class="small text-muted mb-0">Participación activa en trivias oficiales de la comunidad y asistencia certificada a eventos de octavos de final.</p>
+                                </div>
+                                <div class="p-3 bg-light rounded border-start border-4 border-secondary shadow-sm">
+                                    <div class="d-flex justify-content-between align-items-center mb-1"><h4 class="h6 fw-bold mb-0 text-dark">Inscripción Histórica Brasil 2014</h4><span class="text-muted small">2014</span></div>
+                                    <p class="small text-muted mb-0">Ingreso inicial a la plataforma digital durante la histórica participación de cuartos de final de la selección.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
